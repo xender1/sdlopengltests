@@ -13,13 +13,12 @@ public:
 	void unbind();
 
 private:
-	GLuint m_vertexId;
+	void addVBO(int dim, const std::vector<GLfloat>& data);
 
-	//Graphics program
-	GLuint gProgramID = 0;
-	GLint gVertexPos2DLocation = -1;
-	GLuint gVBO = 0;
-	GLuint gIBO = 0;
+	std::vector<GLuint> m_buffers;
+	GLuint m_vboCount = 0;
+
+	GLuint m_vao = 0;
 
 };
 
