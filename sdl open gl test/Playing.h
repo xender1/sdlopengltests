@@ -3,6 +3,8 @@
 #include "GameState.h"
 
 #include "Model.h"
+#include "SimpleShader.h"
+#include "BasicTexture.h"
 
 namespace State 
 {
@@ -17,5 +19,8 @@ namespace State
 
 	private:
 		Model m_model;
+
+		Shader::SimpleShader m_shader;
+		Texture::BasicTexture m_texture;
 	};
 }

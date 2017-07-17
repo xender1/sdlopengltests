@@ -86,13 +86,13 @@ namespace Display {
 					{
 						printf("Warning: Unable to set VSync! SDL Error: %s\n", SDL_GetError());
 					}
-
+					
 					//Initialize OpenGL
-					if (!initGL())
-					{
-						printf("Unable to initialize OpenGL!\n");
-						success = false;
-					}
+					//if (!initGL())
+					//{
+					//	printf("Unable to initialize OpenGL!\n");
+					//	success = false;
+					//}
 				}
 			}
 		}
